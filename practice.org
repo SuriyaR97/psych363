@@ -1,0 +1,48 @@
+#+Title: Title
+
+#+DATE: <2019-11-12 Tue>
+#+OPTIONS: texht:t
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS:
+#+LATEX_HEADER: \bibliographystyle{plain}
+#+LATEX_HEADER_EXTRA:
+* Heading
+  
+** Subheading
+
+   1. List Item
+   2. List Item 2
+   3. List Item 3
+      1. Subitem 1
+      2. Subitem 2
+** Let's make a link
+
+   [[https://uwaterloo.ca][University_of_Waterloo]]
+
+** Let's try R
+
+#+Begin_src R :exports both
+   a <- 2
+   b <- 2
+   print(a+b)
+#+end_src
+
+#+RESULTS:
+: 4
+
+#+begin_src python :results output :exports both
+   x = [1,2,3,4,5]
+   for a in range(0,5):
+        print(x[a])
+#+end_src
+
+#+RESULTS:
+: 1
+: 2
+: 3
+: 4
+: 5
+
+* Bibliography
+
+#+LATEX: \bibliography{refs}
